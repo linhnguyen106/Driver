@@ -1,22 +1,21 @@
 package com.roadbull.driver.models;
 
 /**
- * Created by linhnguyenv1 on 1/23/2017.
+ * Created by linhnguyenv1 on 1/24/2017.
  */
 
-public class Job {
+public class HistoryItem {
     private int Id;
     private int VehicleId;
     private String VehicleNumber;
     private String TakenOn;
     private String TakenBy;
     private int TotalPickups;
-    private String CreatedOn;
+    private int TotalDeliveries;
     private String TotalDistances;
     private String TotalDrivingTime;
     private String TotalWorkingTime;
-    private int TotalDeliveries;
-    private RBRoute Routes;
+    private String CompletedOn;
 
     public int getId() {
         return Id;
@@ -66,12 +65,12 @@ public class Job {
         TotalPickups = totalPickups;
     }
 
-    public String getCreatedOn() {
-        return CreatedOn;
+    public int getTotalDeliveries() {
+        return TotalDeliveries;
     }
 
-    public void setCreatedOn(String createdOn) {
-        CreatedOn = createdOn;
+    public void setTotalDeliveries(int totalDeliveries) {
+        TotalDeliveries = totalDeliveries;
     }
 
     public String getTotalDistances() {
@@ -96,5 +95,13 @@ public class Job {
 
     public void setTotalWorkingTime(String totalWorkingTime) {
         TotalWorkingTime = totalWorkingTime;
+    }
+
+    public String getCompletedOn() {
+        return CompletedOn;
+    }
+
+    public void setCompletedOn(String completedOn) {
+        CompletedOn = completedOn;
     }
 }
