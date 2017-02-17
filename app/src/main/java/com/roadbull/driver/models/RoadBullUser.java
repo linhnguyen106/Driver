@@ -16,7 +16,10 @@ public class RoadBullUser {
     private String ICNumber;
     private String StaffNumber;
     private boolean IsDriver;
-
+    private String VehicleNumber;
+    private String VehicleType;
+    private String UserName;
+    private String Password;
 
 
     public int getId() {
@@ -107,5 +110,27 @@ public class RoadBullUser {
         IsDriver = driver;
     }
 
+    public void setUserName(String userName) {
+        UserName = userName;
+    }
 
+    public void setPassword(String password) {
+        Password = password;
+    }
+
+    public String getVehicleNumber() {
+        return VehicleNumber;
+    }
+
+    public void setVehicleNumber(String vehicleNumber) {
+        VehicleNumber = vehicleNumber;
+    }
+
+    public String getVehicleType() {
+        return VehicleType;
+    }
+
+    public void setVehicleType(String vehicleType) {
+        VehicleType = vehicleType;
+    }
 }

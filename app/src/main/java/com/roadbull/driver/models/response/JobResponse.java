@@ -1,6 +1,7 @@
 package com.roadbull.driver.models.response;
 
 import com.roadbull.driver.models.Job;
+import com.roadbull.driver.models.TimeSlot;
 
 import java.util.List;
 
@@ -11,7 +12,7 @@ import java.util.List;
 public class JobResponse {
     private int Code;
     private List<Job> Result;
-
+    private List<TimeSlot> Timeslots;
     public int getCode() {
         return Code;
     }
@@ -26,5 +27,13 @@ public class JobResponse {
 
     public void setResult(List<Job> result) {
         Result = result;
+    }
+
+    public List<TimeSlot> getTimeslots() {
+        return Timeslots;
+    }
+
+    public void setTimeslots(List<TimeSlot> timeslots) {
+        Timeslots = timeslots;
     }
 }

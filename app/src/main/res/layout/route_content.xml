@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    >
+
+    <TextView android:id="@+id/vehicleNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/textSize16"
+        android:text="@string/vehicle_number"
+        />
+    <TextView android:id="@+id/vehicleNumTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/vehicleNum"
+        android:textSize="@dimen/textSize16"
+        android:textStyle="bold"
+        android:text="123"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:textColor="@android:color/darker_gray"
+        />
+    <TextView android:id="@+id/jobId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/textSize16"
+        android:text="@string/job_id"
+        android:layout_below="@+id/vehicleNum"
+        />
+    <TextView android:id="@+id/jobIdTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/vehicleNum"
+        android:textSize="@dimen/textSize16"
+        android:textStyle="bold"
+        android:text="123"
+        android:layout_below="@+id/vehicleNumTv"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnPinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vehicleNumTv"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_bg"
+        android:text="@string/view_pin"
+        android:textColor="@color/background"
+        />
+
+    <EditText android:id="@+id/searchEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/textSize16"
+        android:hint="@string/consignment_number_no"
+        android:textColorHint="@color/backgroundGrey"
+        android:layout_toLeftOf="@+id/btnSearch"
+        android:layout_below="@+id/btnPinView"
+        />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPinView"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_bg"
+        android:text="@string/searchTxt"
+        android:textColor="@color/background"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/routeRv"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/btnSearch"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>

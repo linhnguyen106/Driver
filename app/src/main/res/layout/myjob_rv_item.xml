@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/list_selector_background"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"    >
+    <View android:id="@+id/separatedLine"
+        android:layout_width="match_parent"
+        android:background="@color/backgroundGrey"
+
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/jobId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize13"
+        android:textStyle="bold"
+        android:text="@string/job_id"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/separatedLine"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="3dp"
+        />
+    <TextView
+        android:id="@+id/jobIdTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize13"
+        android:layout_toRightOf="@+id/jobId"
+        android:text="@string/job_id"
+        android:layout_below="@+id/separatedLine"
+        android:paddingTop="3dp"
+        />
+
+    <TextView
+        android:id="@+id/vehicleNum"
+        android:layout_below="@+id/jobId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize13"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:text="@string/vehicle_number"
+        android:layout_marginRight="5dp"
+        />
+    <TextView
+        android:id="@+id/vehicleNumTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize13"
+        android:text="@string/job_id"
+        android:layout_below="@+id/jobId"
+        android:layout_toRightOf="@+id/vehicleNum"
+        />
+    <TextView
+        android:id="@+id/dateTime"
+        android:layout_below="@+id/vehicleNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize13"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:text="@string/create_on"
+        android:layout_marginRight="5dp"
+        />
+    <TextView
+        android:id="@+id/dateTimeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize13"
+        android:text="@string/job_id"
+        android:layout_below="@+id/vehicleNum"
+        android:layout_toRightOf="@+id/dateTime"
+        />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_right_arrow"
+        />
+</RelativeLayout>

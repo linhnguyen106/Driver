@@ -25,7 +25,6 @@ import retrofit2.http.Path;
 public interface RoadBullService {
     final static String BASE_URL = "http://sandcds.roadbull.com/api/";
 
-
     @POST("accounts/login")
     Call<LoginResponse> login(@Body RoadBullUser user);
 
@@ -35,7 +34,7 @@ public interface RoadBullService {
     @POST("accounts/register")
     Call<RBResponse> registerUser(@Body RegisterUser user);
 
-    @POST("jobs/jobs/myjobs")
+    @POST("jobs/myjobs")
     Call<JobResponse> getMyJob(@Header("Authorization") String token);
 
     @POST("settings/urls")

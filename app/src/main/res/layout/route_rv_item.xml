@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <View android:id="@+id/separatedLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroundGrey"
+        >
+    </View>
+    <View android:id="@+id/routeType"
+        android:layout_width="10dp"
+        android:layout_below="@+id/separatedLine"
+        android:layout_alignParentLeft="true"
+        android:layout_height="match_parent"
+        android:background="@color/red"
+        android:layout_alignBottom="@+id/postCode"
+        >
+    </View>
+    <TextView android:id="@+id/fromTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize14"
+        android:layout_below="@+id/separatedLine"
+        android:layout_toRightOf="@+id/routeType"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="35dp"
+        android:text="from city"
+        />
+    <!--<TextView android:id="@+id/toTv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="@dimen/textSize14"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_toRightOf="@+id/routeType"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_marginRight="35dp"-->
+        <!--/>-->
+    <TextView android:id="@+id/postCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize14"
+        android:layout_below="@+id/fromTv"
+        android:layout_toRightOf="@+id/routeType"
+        android:text="from city"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="5dp"
+
+        />
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_right_arrow"
+        />
+</RelativeLayout>

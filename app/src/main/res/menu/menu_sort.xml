@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/default_order"
+        android:icon="@drawable/ic_tasks"
+        android:title="Default Order" />
+
+    <item
+        android:id="@+id/ascending_order"
+        android:icon="@drawable/ic_tasks"
+        android:title="Ascending Order" />
+
+    <item
+        android:id="@+id/descending_order"
+        android:icon="@drawable/ic_notification"
+        android:title="Descending Order" />
+</menu>

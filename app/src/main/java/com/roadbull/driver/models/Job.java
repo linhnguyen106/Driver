@@ -97,4 +97,20 @@ public class Job {
     public void setTotalWorkingTime(String totalWorkingTime) {
         TotalWorkingTime = totalWorkingTime;
     }
+
+    public int getTotalDeliveries() {
+        return TotalDeliveries;
+    }
+
+    public void setTotalDeliveries(int totalDeliveries) {
+        TotalDeliveries = totalDeliveries;
+    }
+
+    public RBRoute getRoutes() {
+        return Routes;
+    }
+
+    public void setRoutes(RBRoute routes) {
+        Routes = routes;
+    }
 }

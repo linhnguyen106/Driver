@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#213f79</color>
+    <color name="colorPrimaryDark">#213f79</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="dark_transparent">#a0c0c0c0</color>
+
+    <color name="background">#ffffff</color>
+    <color name="backgroundGrey">#e0e0e0</color>
+
+    <color name="foregroundToolbar">#ffffff</color>
+
+    <color name="backgroundStaffLogin">#df872f</color>
+    <color name="backgroundMemberLogin">#89491d</color>
+    <color name="backgroundArrived">#2fa33b</color>
+    <color name="backgroundFailed">#fd0035</color>
+    <color name="backgroundOption">#7f00ff</color>
+
+    <color name="backgroundSideMenu">#2b2f3e</color>
+    <color name="foregroundSideMenu">#ffffff</color>
+    <color name="backgroundSideMenuSelected">#df872f</color>
+
+    <color name="foregroundButton">#ffffff</color>
+    <color name="foregroundLoginTextColor">#ffffff</color>
+    <color name="foregroundDropdownTextColor">#000000</color>
+
+    <color name="primary_text_default_material_light">#ffffff</color>
+    <color name="background_material_light">#2b2f3e</color>
+    <color name="foreground_material_light">#ffffff</color>
+
+    <color name="background_orders">#0099cc</color>
+    <color name="buttonColor">#80cbc4</color>
+    <color name="red">#FF0000</color>
+
 </resources>
